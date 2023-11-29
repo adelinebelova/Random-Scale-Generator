@@ -22,6 +22,44 @@ function getScale() {
     }; 
 
     let scale_type = document.getElementById("scaleType").value;
+    let link = document.getElementById("tutorial"); 
+
+    //updating tutorial links
+    if(scale_type == "natural"){
+        link.href = "https://piano-music-theory.com/2016/06/01/minor-scales-natural-minor-scales/";
+    }
+    else if(scale_type == "majors"){
+        link.href = "https://piano-music-theory.com/2016/05/31/major-scales/";
+    }
+    else if(scale_type == "harmonic"){
+        link.href = "https://piano-music-theory.com/2016/06/01/minor-scales-harmonic-minor-and-melodic-minor-scales/";
+    }
+    else if(scale_type == "melodic"){
+        link.href = "https://piano-music-theory.com/2021/08/14/melodic-minor-scales/";
+    }
+    else if(scale_type == "pentatonic"){
+        link.href = "https://www.pianoscales.org/pentatonic.html#majorpenta";
+    }
+    else if(scale_type == "octatonic"){
+        link.href = "https://www.youtube.com/watch?v=B-nOJd_sLWE";
+    }
+    else if(scale_type == "whole"){
+        link.href = "https://www.pianoscales.org/whole-tone.html";
+    }
+    else if(scale_type == "seconds"){
+        link.href = "https://www.amazon.com/Exercices-Journaliers-flute-Daily-Exercises/dp/B000QSFEMK/ref=asc_df_B000QSFEMK/?tag=hyprod-20&linkCode=df0&hvadid=652410035661&hvpos=&hvnetw=g&hvrand=15526563864293045659&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9011574&hvtargid=pla-2061551132848&psc=1&mcid=a157352b21503fd0b963864fe2197d78";
+    }
+    else if(scale_type == "fourths"){
+        link.href = "https://www.amazon.com/Exercices-Journaliers-flute-Daily-Exercises/dp/B000QSFEMK/ref=asc_df_B000QSFEMK/?tag=hyprod-20&linkCode=df0&hvadid=652410035661&hvpos=&hvnetw=g&hvrand=15526563864293045659&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9011574&hvtargid=pla-2061551132848&psc=1&mcid=a157352b21503fd0b963864fe2197d78";
+    }
+    else if(scale_type == "blues"){
+        link.href = "https://www.pianoscales.org/blues.html#majorblues";
+    }
+    else if(scale_type == "modes"){
+        link.href = "https://pianowithjonny.com/piano-lessons/piano-musical-modes-the-complete-guide/";
+    }
+    
+
     let randomIndex = Math.floor(Math.random() * scales[scale_type].length);
     let randomNote = scales[scale_type][randomIndex];
 
