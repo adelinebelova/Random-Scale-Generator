@@ -1,0 +1,244 @@
+:root{
+    
+    --antique: #d7bea8;
+    --pink: #ca787a; 
+    --burgundy: #4d2734;
+    --earth: #b28f75;
+    --bright: #ffa5a7;
+    --lemon: #ffc66b;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Latin Modern Mono', 'Times New Roman';
+    text-decoration-skip-ink: none;
+}
+
+
+/**********************************************************
+                    H O M E P A G E
+**********************************************************/
+
+#wrapper-home{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 120px;
+    
+}
+
+.body-home {
+    background-color: var(--antique);
+}
+
+.hero{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+}
+
+.slanted{
+    font-family: 'Latin Modern Mono Slanted' !important;
+}
+
+.highlight{
+    color: var(--pink) !important;
+}
+
+.body-home{
+    height: 100vh;
+    width: 100vw;
+}
+
+.heading{
+    font-size: 65px;
+    color: var(--burgundy);
+    justify-content: center;
+    height: auto;
+    text-align: center;
+    position: relative;
+    font-weight: 400;
+}
+
+.created{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    text-align: center;
+    height: auto;
+    color: var(--burgundy);
+    font-size: 32px;
+    margin:auto;
+    padding: 20px;
+
+}
+
+
+.text-box{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    width: 55vw;
+    border: 4px solid var(--burgundy);
+    border-radius: 30px;
+    padding: 20px;
+    color: var(--burgundy);
+    box-shadow: 12px 12px 0px var(--pink), 15px 15px 0px var(--burgundy);
+    transform: scale(0.9);
+    background-color: var(--antique);
+    
+}
+
+
+.text-box  p {
+    margin: auto;
+    height: auto;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    font-size: 25px;
+    padding-top: 30px;
+
+}
+
+.generate-button{
+    min-width: 120px;
+    width: 30%;
+    text-align: center;
+    border: 2px solid var(--burgundy);
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    background-color: var(--pink);
+    font-size: 22px;
+    cursor: pointer;
+ 
+}
+
+.generate{
+    display: flex;
+}
+
+.generate-button:hover{
+    background-color:var(--bright);
+}
+
+
+.selection-button{
+    height: auto;
+    width: 50vw;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    margin-top: 20px;
+}
+
+.selection{
+    flex:auto;
+    background-color: var(--pink);
+    border: 2px solid var(--burgundy);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    width: 60%;
+    text-align: center;
+    font-size: 22px;
+}
+
+@media screen and (max-width:700px){
+    #result{
+        font-size: 19px !important;
+    }
+}
+
+@media screen and (max-width:400px){
+
+    .text-box p {
+        font-size: 18px;
+    }
+
+    .text-box p:nth-of-type(3){
+        font-size: 20px;
+    }
+
+    .created{
+        font-size: 26px;
+    }
+
+    #scaleType{
+        font-size: 15px;
+        max-width: 75%;
+    }
+
+    .generate-button{
+        min-width: 100px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #result{
+        font-size: 12px !important;
+        text-align: center;
+        min-width: 100px;
+    }
+
+}
+
+
+#result{ 
+    margin: auto;
+    font-size: 35px;
+    background-color: var(--earth);
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 3px solid var(--burgundy);
+}
+
+.result-container{
+    display: flex;
+    width: 100%;
+}
+
+@keyframes textShine {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+.gradient {
+background: linear-gradient(
+    to right,
+    var(--pink) 10%,
+    var(--lemon) 50%,
+    var(--pink) 80%
+);
+
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+background-size: 500% auto;
+animation: textShine 1.5s ease-in-out 2 alternate;
+}

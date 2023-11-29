@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Random Scale Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css"/>
+    </head> 
+
+    <div id="wrapper-home">
+        <body class="body-home"> 
+            <div class="hero"> 
+                <h1 id="heading" class="heading"><span id="name" class="gradient highlight slanted">Random Scale Generator</span></h1>
+                <p class="created">Created by Adeline Belova</p>
+                
+            <div class="text-box">
+                <p> Select which scales you'd like to play:</p>
+
+                <div class="selection-button">
+                    <select id="scaleType" class="selection">
+                        <option value ="majors">Major</option>
+                        <option value ="harmonic">Harmonic Minor</option>
+                        <option value ="melodic">Melodic Minor</option>
+                        <option value ="natural">Natural Minor</option>
+                        <option value ="pentatonic">Pentatonic</option>
+                        <option value ="octatonic">Octatonic</option>
+                        <option value ="whole">Whole Tone</option>
+                        <option value ="seconds">Moyse | 2nds/3rds</option>
+                        <option value ="fourth">Moyse | 3rds/4ths</option>
+                        <option value ="blues">Blues</option>
+                        <option value ="modes">Modes</option>
+                    </select> 
+                </div>
+
+                <div class="generate">
+                <button onclick="getScale()" class="generate-button">Generate</button>
+                </div>
+
+                <div class="result-container">
+                    <div id="result"></div>
+                </div>
+
+            </div>
+
+        
+        </div>
+        <script src="script.js"></script>
+</html>
