@@ -3,6 +3,7 @@
     --antique: #d7bea8;
     --pink: #ca787a; 
     --burgundy: #4d2734;
+    --box: #ffc66b;
     --earth: #b28f75;
     --bright: #ffa5a7;
     --lemon: #ffc66b;
@@ -94,9 +95,9 @@
     border-radius: 30px;
     padding: 20px;
     color: var(--burgundy);
-    box-shadow: 12px 12px 0px var(--pink), 15px 15px 0px var(--burgundy);
+    box-shadow: 12px 12px 0px #b45d5f, 15px 15px 0px var(--burgundy);
     transform: scale(0.9);
-    background-color: var(--antique);
+    background: linear-gradient(270deg, rgba(202,120,122,1) 2%, rgba(255,198,107,1) 133%);
     
 }
 
@@ -204,7 +205,7 @@
 #result{ 
     margin: auto;
     font-size: 35px;
-    background-color: var(--earth);
+    background-color: var(--bright);
     width: 50%;
     text-align: center;
     padding: 20px;
